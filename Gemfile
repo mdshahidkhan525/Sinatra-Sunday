@@ -26,3 +26,7 @@ gem 'sequel-seed'
 gem 'sinatra-sequel'
 #for stripe integration
 gem 'stripe'
+#for password
+gem 'sequel_secure_password'
+#for authentication
+gem 'bcrypt'

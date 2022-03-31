@@ -3,13 +3,15 @@ require 'sinatra'
 # require 'stripe'
 # require 'sidekiq'
 # load dotenv
+require 'sequel_secure_password'
 require 'dotenv/load'
 # load activesupport
 require 'active_support/all'
 
 # load autoloader
 require 'require_all'
-
+#for authentication
+require 'bcrypt'
 # init logging
 require 'logger'
 logger = Logger.new($stdout)
@@ -45,4 +47,4 @@ require_all './lib'
 require './app'
 
 # load controllers
-# require_all 'controllers'
+require_all 'controllers'
